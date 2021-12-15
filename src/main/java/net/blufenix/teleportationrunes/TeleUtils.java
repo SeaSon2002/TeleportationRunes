@@ -34,8 +34,6 @@ public class TeleUtils {
         // check one more block down
         } else if ((rotation = BlockUtil.isTeleporter(loc.add(DOWN))) >= 0) {
             return new Teleporter(loc, rotation);
-        } else if ((rotation = BlockUtil.isTeleporter(loc.add(DOWN))) >= 0) {
-            return new Teleporter(loc, rotation);
         }
         return null;
     }
@@ -187,9 +185,9 @@ public class TeleUtils {
                 Log.d(player.getName() + " teleported from " + playerLoc + " to " + adjustedLoc);
                 return true;
             } else {
-                player.sendMessage(ChatColor.RED + "You do not have enough experience to teleport.");
-                player.sendMessage(ChatColor.RED + "Your Exp: " + currentExp);
-                player.sendMessage(ChatColor.RED + "Exp needed: " + fee);
+                player.sendMessage(ChatColor.RED + "Bạn không có đủ XP để dịch chuyển!");
+                player.sendMessage(ChatColor.RED + "XP hiện có: " + currentExp);
+                player.sendMessage(ChatColor.RED + "XP cần: " + fee);
                 return false;
             }
 
@@ -205,9 +203,6 @@ public class TeleUtils {
         // if this one's not safe, check one block up
         if (!BlockUtil.isSafe(loc)) {
             loc.add(UP);
-        }
-        if (!BlockUtil.isSafe(loc)) {
-        loc.add(UP);
         }
 
         // if one block up isn't safe, bail

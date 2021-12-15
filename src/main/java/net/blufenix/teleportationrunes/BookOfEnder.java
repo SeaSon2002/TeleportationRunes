@@ -38,8 +38,8 @@ public class BookOfEnder extends ItemStack {
     private BookOfEnder() {
         super(Material.ENCHANTED_BOOK, 1);
         ItemMeta meta = getItemMeta();
-        meta.setDisplayName("Book of Ender");
-        meta.setLore(Arrays.asList("Bending spacetime has never been easier!"));
+        meta.setDisplayName("Sách Ender");
+        meta.setLore(Arrays.asList("Dùng để kích hoạt Bệ dịch chuyển"));
         setItemMeta(meta);
     }
 

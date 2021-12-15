@@ -11,13 +11,13 @@ public class StringResources {
     public static final String UNLOADED = "TeleportationRunes has been unloaded!";
     public static final String DISABLED = "TeleportationRunes is disabled!";
 
-    public static final String WAYPOINT_ACTIVATED = ChatColor.GREEN+"Waypoint activated!";
-    public static final String WAYPOINT_ALREADY_ACTIVE = ChatColor.RED+"This waypoint is already active.";
-    public static final String WAYPOINT_CHANGED = ChatColor.GREEN+"Waypoint signature updated!";
-    public static final String WAYPOINT_SIGNATURE_EXISTS = ChatColor.RED+"This waypoint signature has already been used. You must change the signature in order to activate this waypoint.";
-    public static final String WAYPOINT_NOT_FOUND = ChatColor.RED+"There is no waypoint with this signature.";
-    public static final String WAYPOINT_DAMAGED = ChatColor.RED+"The waypoint you desire has been damaged or destroyed. You must repair the waypoint or create a new one.";
-    public static final String WAYPOINT_ALTERED = ChatColor.RED+"The waypoint's signature has been altered. Teleporter unlinked.";
-    public static final String WAYPOINT_OBSTRUCTED = ChatColor.RED+"Teleportation failed. Destination is obstructed.";
-    public static final String WAYPOINT_DIFFERENT_WORLD = ChatColor.RED+"You cannot teleport between worlds.";
+    public static final String WAYPOINT_ACTIVATED = ChatColor.GREEN+"Bệ dịch chuyển đã được kích hoạt thành công!";
+    public static final String WAYPOINT_ALREADY_ACTIVE = ChatColor.RED+"Bệ dịch chuyển này đã được kích hoạt từ trước.";
+    public static final String WAYPOINT_CHANGED = ChatColor.GREEN+"Ký hiệu của bệ dịch chuyển đã được thay đổi!";
+    public static final String WAYPOINT_SIGNATURE_EXISTS = ChatColor.RED+"Ký hiệu này đã được sử dụng. Đổi ký hiệu khác để kích hoạt bệ dịch chuyển này.";
+    public static final String WAYPOINT_NOT_FOUND = ChatColor.RED+"Không có bệ dịch chuyển nào có ký hiệu khớp với cổng này.";
+    public static final String WAYPOINT_DAMAGED = ChatColor.RED+"Không thể dịch chuyển do Bệ dịch chuyển bạn đang đi tới đã bị hư hại.";
+    public static final String WAYPOINT_ALTERED = ChatColor.RED+"Huỷ liên kết với Cổng dịch chuyển do Ký hiệu của Bệ dịch chuyển đã bị thay đổi.";
+    public static final String WAYPOINT_OBSTRUCTED = ChatColor.RED+"Khôgn thể dịch chuyển do Bệ dịch chuyển đang bị chặn.";
+    public static final String WAYPOINT_DIFFERENT_WORLD = ChatColor.RED+"Bạn không thể dịch chuyển giữa các thế giới.";
 }

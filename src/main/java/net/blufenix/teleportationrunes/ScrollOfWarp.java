@@ -42,8 +42,8 @@ public class ScrollOfWarp extends ItemStack {
         ItemMeta meta = getItemMeta();
         meta.addEnchant(Enchantment.BINDING_CURSE, 1, true);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-        meta.setDisplayName("Scroll of Warp");
-        meta.setLore(Arrays.asList("Unattuned"));
+        meta.setDisplayName("Vé dịch chuyển");
+        meta.setLore(Arrays.asList("Chưa liên kết Bệ dịch chuyển"));
         setItemMeta(meta);
     }
 

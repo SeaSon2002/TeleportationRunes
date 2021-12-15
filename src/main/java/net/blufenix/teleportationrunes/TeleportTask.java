@@ -92,9 +92,9 @@ public class TeleportTask extends BukkitRunnable {
             // show the player the cost
             int fee = TeleUtils.calculateExpr(destWaypoint.loc, sourceLoc, Config.costFormula);
             int currentExp = ExpUtil.getTotalExperience(player);
-            String msg = String.format("%d XP / %d XP", fee, currentExp);
+            String msg = String.format("Phí dịch chuyển là %d XP", fee);
             if (requireSneak && !player.isSneaking()) {
-                msg = msg.concat(" [sneak to confirm]");
+                msg = msg.concat(" [Sneak để xác nhận]");
             }
             player.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent(msg));
 
@@ -131,7 +131,7 @@ public class TeleportTask extends BukkitRunnable {
         elapsedTicks += updateIntervalTicks;
 
         if (!canLeaveArea && !playerStillAtTeleporter()) {
-            player.sendMessage("You left the teleporter area. Cancelling...");
+            player.sendMessage("Huỷ dịch chuyển do bạn đã rời khỏi cổng..");
             onSuccessOrFail(false);
             return;
         }
@@ -164,7 +164,7 @@ public class TeleportTask extends BukkitRunnable {
     }
 
     private boolean playerStillAtTeleporter() {
-        return player.getLocation().distance(sourceLoc) < 2.5;
+        return player.getLocation().distance(sourceLoc) < 3.5;
     }
 
     public static abstract class Callback {
