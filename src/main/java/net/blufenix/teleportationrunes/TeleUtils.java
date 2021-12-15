@@ -207,13 +207,14 @@ public class TeleUtils {
             loc.add(UP);
         }
 
+        if (!BlockUtil.isSafe(loc)) {
+            loc.add(UP);
+        }
         // if one block up isn't safe, bail
         if (!BlockUtil.isSafe(loc)) {
             return null;
         }
-        if (!BlockUtil.isSafe(loc)) {
-            return null;
-        }
+
         loc.add(Vectors.UP)
            .add(Vectors.UP_A_LITTLE)
            .add(Vectors.CENTER);
