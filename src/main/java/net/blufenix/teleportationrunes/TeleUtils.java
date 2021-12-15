@@ -36,6 +36,7 @@ public class TeleUtils {
             return new Teleporter(loc, rotation);
         } else if ((rotation = BlockUtil.isTeleporter(loc.add(DOWN))) >= 0) {
             return new Teleporter(loc, rotation);
+        }
         return null;
     }
 
