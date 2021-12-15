@@ -34,7 +34,8 @@ public class TeleUtils {
         // check one more block down
         } else if ((rotation = BlockUtil.isTeleporter(loc.add(DOWN))) >= 0) {
             return new Teleporter(loc, rotation);
-        }
+        } else if ((rotation = BlockUtil.isTeleporter(loc.add(DOWN))) >= 0) {
+            return new Teleporter(loc, rotation);
         return null;
     }
 
@@ -209,7 +210,9 @@ public class TeleUtils {
         if (!BlockUtil.isSafe(loc)) {
             return null;
         }
-
+        if (!BlockUtil.isSafe(loc)) {
+            return null;
+        }
         loc.add(Vectors.UP)
            .add(Vectors.UP_A_LITTLE)
            .add(Vectors.CENTER);
